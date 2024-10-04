@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/* 768px */
+@media screen and (max-width: 768px) {
+    /* header */
+    #header {
+        display: none;
+    }
+    .gnb_list {
+        width: 100%;
+        display: none;
+    }
+    .company {
+        display: none;
+    }
+    .util_nav .login,
+    .util_nav .menu {
+        display: none;
+    }
+    .search > a > img {
+        width: 50px;
+        height: 50px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+    display: none !important;
+    }
+    /*  */
+    /* 메인스와이퍼 */
+    .slide_box {
+        padding: 50px 0;
+    }
+    .slide_btn {
+        display: none;
+    }
+    .bg01 {
+        background: url('../img/mb01.png') no-repeat center/cover;
+    }
+    
+    .bg02 {
+        background: url('../img/mb02.png')no-repeat center/cover;
+    }
+    
+    .bg03 {
+        background: url('../img/mb03.png')no-repeat center/cover;
+    }
+    /*  */
+    /* 이런상품들을 찾고계신가요? */
+    .item_box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 50px;
+        height: auto;
+    }
+    .item_title {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    .item_box_right {
+        gap: 20px;
+    }
+    .item_box_right img {
+        width: 100px;
+        height: 100px;
+    }
+    /*  */
+    /* 즐겨찾는메뉴 */
+    .favorites_box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .favorites {
+        width: 620px;
+        margin-top: 20px;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+    .favorites li {
+        width: 300px;
+    }
+    .favorites .on {
+        display: none;
+    }
+    .favorites a {
+        text-align: center;
+        padding: 12px 10px;
+        font-size: 24px;
+    }
+    .favorites_btn {
+        position: absolute;
+        top:80px;
+        right: 50px;
+        width: 20px;
+        height: 20px;
+        display: block;
+        background: url(../img/arrow_down.png)no-repeat center/cover;
+    }
+    /*  */
+    /* 추천상품 */
+    .suggest {
+        width: 100%;
+    }
+    /*  */
+    /* 인터넷/B tv 요금계산기 */
+    .calc {
+        height: auto;
+        line-height: 70px;
+    }
+    .calc span {
+        font-size: 18px;
+    }
+    .calc_btn {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    /*  */
+    /* 혜택 */
+    .item_flex {
+        flex-wrap: wrap;
+    }
+    .item_flex li {
+        flex: 0 0 calc(50% - 30px); /* 두 개씩 보이도록 설정, 간격 조정 */
+        margin: 5px; /* 여백 설정 */
+    }
+    .item_flex li a img {
+        width: 100px;
+        height: auto;
+    }
+    /*  */
+    /* HOT & NEW */
+    .hotnew .swiper {
+    overflow: hidden;
+    }
+    /*  */
+    /* 맞춤패키지 */
+    .pkg li a img {
+        width: 300px;
+        height: auto;
+    }
+    .pkg .item_title {
+        font-size: 24px;
+    }
+    /*  */
+    /* 셀프문제해결 */
+    .self_flex {
+        display: block;
+        text-align: center;
+    }
+    .item_title {
+        font-size: 24px;
+    }
+    .item_intro {
+        display: none;
+        margin: 0;
+    }
+    .self_list li a {
+        align-items: center;
+    }
+    /*  */
+    /* 공지사항 */
+    .notice_list {
+        width: 420px;
+    }
+    /*  */
+    /* footer */
+    #footer {
+        display: none;
+    }
+}
