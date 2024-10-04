@@ -3,9 +3,7 @@
 /* 768px */
 @media screen and (max-width: 768px) {
     /* header */
-    #header {
-        display: none;
-    }
+    
     .gnb_list {
         width: 100%;
         display: none;
@@ -17,13 +15,76 @@
     .util_nav .menu {
         display: none;
     }
+    .search_title {
+        display: block;
+        position: relative;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .search_title::before {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 15px;
+        top: 5px;
+        left: 0;
+        background:url(../img/arrow_down.png)
+    }
     .search > a > img {
         width: 50px;
         height: 50px;
     }
-    .swiper-button-next,
-    .swiper-button-prev {
-    display: none !important;
+    .search_box {
+        height: 100vh;
+        overflow: scroll;
+    }
+    .keyword_form input[type="search"] {
+        height: 100px;
+        padding: 10px 30px;
+        background-color: #F2F2F2;
+        border-radius: 50px;
+        border: none;
+        font-size:28px;
+    }
+    .search_btn {
+        width: 65px;
+        height: 70px;
+        top: 10px;
+        right: 30px;
+    }
+    .keyword_flex > .suggest_key {
+        display: none;
+    }
+    .keyword_flex .keyword {
+        display: none;
+    }
+    .keyword_flex {
+        flex-direction: column;
+    }
+    .best_keyword {
+        margin-top: 40px;
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        transition: all 0.2s ease-in-out;
+    }
+    .best_keyword li {
+        display: block;
+    }
+    .best_keyword:hover {
+        border:1px solid #ddd;
+    }
+    .search_closebtn {
+        position: absolute;
+        top: 300px;
+        right: 20px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
     }
     /*  */
     /* 메인스와이퍼 */
@@ -42,7 +103,11 @@
     }
     
     .bg03 {
-        background: url('../img/mb03.png')no-repeat center/cover;
+        background: url('../img/mb03.png')no-repeat center/cover;   
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+    display: none !important;
     }
     /*  */
     /* 이런상품들을 찾고계신가요? */
@@ -149,7 +214,7 @@
     .item_title {
         font-size: 24px;
     }
-    .item_intro {
+    .self_flex .item_intro {
         display: none;
         margin: 0;
     }
@@ -166,4 +231,9 @@
     #footer {
         display: none;
     }
+}
+
+/* 430px */
+@media screen and (max-width: 430px) {
+
 }

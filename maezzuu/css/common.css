@@ -624,6 +624,9 @@ header.fixed {
 /*  */
 
 /* search */
+.search_title {
+    display: none;
+}
 .search_box {
     display: none;
     position: absolute;
@@ -684,6 +687,7 @@ header.fixed {
     font-weight: 700;
     padding-top: 18px;
 }
+
 
 .keyword,
 .best_keyword {
