@@ -1,3 +1,4 @@
+
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   pagination: {
@@ -32,8 +33,9 @@ var swiper = new Swiper(".suggestSwiper", {
     },
   },
 });
+/* 메인스와이퍼이미지 */
 
-
+/* 핫뉴스스와이퍼이미지 */
 var swiper = new Swiper(".hotnewSwiper", {
   slidesPerView: 'auto',
   spaceBetween: 2,
@@ -55,16 +57,5 @@ var swiper = new Swiper(".hotnewSwiper", {
     },
   },
 });
-
-var swiper = new Swiper(".serviceSwiper", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+/* 핫뉴스스와이퍼이미지 */
 

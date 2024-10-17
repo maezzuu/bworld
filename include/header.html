@@ -898,8 +898,10 @@
 </header>
 
 <script>
+
 $(function () {
     function hideMenus() {
+        /* gnb 마우스효과 */
         $('.subwrap > .gnb_menu').removeClass('currenton').stop(true, true).slideUp();
         $('.gnb_list').removeClass('current');
         $('.dim').hide();
@@ -956,27 +958,28 @@ $(function () {
     });
   });
   
+  /* search아이콘 클릭시 검색창 */
   $(function(){
     $('.search').on('click', function(){
       $('.search_box').css({display:'block',borderTop:'1px solid black'});
-      $('.dim').css('display', 'block'); // dim 효과를 보이게 함
-      $('.best_keyword').addClass('show'); // show 클래스 추가
-      $('body').addClass('hidden'); // body에 hidden 클래스 추가
+      $('.dim').css('display', 'block'); 
+      $('.best_keyword').addClass('show');
+      $('body').addClass('hidden'); 
     });
   
+    /* search창 닫기 */
     $('.search_closebtn').on('click', function(){
       $('.search_box').css('display', 'none');
-      $('.dim').css('display', 'none'); // dim 효과를 숨김
-      $('.best_keyword').removeClass('show'); // show 클래스 제거
-      $('body').removeClass('hidden'); // body에서 hidden 클래스 제거
+      $('.dim').css('display', 'none'); 
+      $('.best_keyword').removeClass('show');
+      $('body').removeClass('hidden'); 
     });
   });
   
+  /* menu아이콘 클릭시 */
   $(function(){
     $('.menu').on('click',function(){
       $('.menu_box').toggleClass('on')
-    //   $('main').css('display', 'none');
-      // 메뉴가 열렸을 때 body의 overflow를 숨기기
       if ($('.menu_box').hasClass('on')) {
       $('.menu img').attr('src', 'img/menu_close_btn.svg');
       $('body').css('overflow', 'hidden');
