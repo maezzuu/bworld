@@ -434,9 +434,6 @@
 
 /* 430px */
 @media screen and (max-width:430px) {
-    .header_flex {
-        min-height: 50px;
-    }
     .advantage li a img {
         width: 40px;
         height: auto;
